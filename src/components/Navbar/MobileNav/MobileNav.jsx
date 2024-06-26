@@ -32,11 +32,11 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
                 Education
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="menu-item" href="true">
                 Projects
               </a>
-            </li>
+            </li> */}
             <li>
               <a className="menu-item" href="true">
                 Contact Me
