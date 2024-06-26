@@ -11,11 +11,12 @@ const Head = () => {
     <section className="head-container">
       <div className="head-content">
         <h2>Hello...! This is Shabarish N P</h2>
+        <h4>MERN Stack Developer</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          neque omnis dolores necessitatibus! Distinctio a ea praesentium, vel
-          aperiam animi odit alias magnam iusto earum pariatur numquam vitae,
-          provident ducimus.
+          "A Computer Science Engineering graduate" Seeking for a position in
+          the field of Software Engineering or related position which offers key
+          participation, team oriented tasks, immediate challenges and career
+          opportunity.
         </p>
       </div>
       <div className="head-img">
