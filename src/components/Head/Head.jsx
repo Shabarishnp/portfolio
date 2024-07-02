@@ -9,7 +9,7 @@ import nodelogo from "../assets/images/node.png";
 const Head = () => {
   return (
     <section className="head-container">
-      <div className="head-content">
+      <div id="home" className="head-content">
         <h2>Hello...! This is Shabarish N P</h2>
         <h4>MERN Stack Developer</h4>
         <p>

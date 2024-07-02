@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "./Navbar.css";
 import MobileNav from "./MobileNav/MobileNav";
 import portlogo from "../assets/images/snplogo.png";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -16,16 +15,16 @@ const Navbar = () => {
       <nav className="nav-wrapper">
         <div className="nav-content">
           {/* <img
-            className="logo"
-            src="https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_64dcaa15a647704c049e47c4_mern_stack_OG_Image_6aa06011b5.jpg"
-            alt="logo"
-          /> */}
+              className="logo"
+              src="https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_64dcaa15a647704c049e47c4_mern_stack_OG_Image_6aa06011b5.jpg"
+              alt="logo"
+            /> */}
           <img src={portlogo} className="logo" alt="logo" />
           <ul>
             <li>
               {/* <a className="menu-item" href="#home">
-                Home
-              </a> */}
+              Home
+            </a> */}
               <Link
                 className="menu-item"
                 to="home"
@@ -38,8 +37,8 @@ const Navbar = () => {
             </li>
             <li>
               {/* <a className="menu-item" href="true">
-                Skills
-              </a> */}
+              Skills
+            </a> */}
               <Link
                 className="menu-item"
                 to="skills"
@@ -52,8 +51,8 @@ const Navbar = () => {
             </li>
             <li>
               {/* <a className="menu-item" href="true">
-                Education
-              </a> */}
+              Education
+            </a> */}
               <Link
                 className="menu-item"
                 to="education"
@@ -71,8 +70,8 @@ const Navbar = () => {
             </li> */}
             <li>
               {/* <a className="menu-item" href="true">
-                Contact Me
-              </a> */}
+              Contact Me
+            </a> */}
               <Link
                 className="menu-item"
                 to="contactme"
@@ -99,5 +98,3 @@ const Navbar = () => {
     </>
   );
 };
-
-export default Navbar;
