@@ -35,10 +35,8 @@ const Education = () => {
   };
 
   return (
-    <section className="education-container">
-      <h5 id="education" className="edu">
-        Education Details
-      </h5>
+    <section id="education" className="education-container">
+      <h5 className="edu">Education Details</h5>
 
       <div className="education-content">
         <div className="arrow-right" onClick={sliderRight}>
