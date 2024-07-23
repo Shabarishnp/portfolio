@@ -70,7 +70,12 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
             </li>
             <button
               className="contact-btn"
-              onClick={() => window.open("/Shabarish_N_P.pdf", "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://shabarishnpportfolio-shabarish-n-ps-projects.vercel.app/Shabarish_N_P.pdf",
+                  "_blank"
+                )
+              }
             >
               Resume
             </button>
