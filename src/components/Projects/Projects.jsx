@@ -74,7 +74,11 @@ const Projects = () => {
               <li>JavaScript</li>
               <li>NodeJS</li>
               <div className="project-links">
-                <a href="#true" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Shabarishnp/board_game"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TbBrandGithub />
                 </a>
               </div>
@@ -110,7 +114,11 @@ const Projects = () => {
               <li>React</li>
               <li>NodeJs</li>
               <div className="project-links">
-                <a href="#true" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Shabarishnp/transaction-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TbBrandGithub />
                 </a>
               </div>

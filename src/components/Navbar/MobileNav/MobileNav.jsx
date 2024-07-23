@@ -1,6 +1,7 @@
 import React from "react";
 import "./MobileNav.css";
 import portlogo from "../../assets/images/snplogo.png";
+import { Link } from "react-scroll";
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
@@ -13,29 +14,59 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
           <img src={portlogo} className="logo" alt="logo" />
           <ul>
             <li>
-              <a className="menu-item" href="#Home">
+              <Link
+                className="menu-item"
+                to="home"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="menu-item" href="true">
+              <Link
+                className="menu-item"
+                to="skills"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="menu-item" href="true">
+              <Link
+                className="menu-item"
+                to="education"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Education
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="menu-item" href="true">
+              <Link
+                className="menu-item"
+                to="projects"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="menu-item" href="true">
+              <Link
+                className="menu-item"
+                to="contactme"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Contact Me
-              </a>
+              </Link>
             </li>
             <button
               className="contact-btn"
