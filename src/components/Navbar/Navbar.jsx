@@ -15,17 +15,9 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          {/* <img
-            className="logo"
-            src="https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_64dcaa15a647704c049e47c4_mern_stack_OG_Image_6aa06011b5.jpg"
-            alt="logo"
-          /> */}
           <img src={portlogo} className="logo" alt="logo" />
           <ul>
             <li>
-              {/* <a className="menu-item" href="#home">
-                Home
-              </a> */}
               <Link
                 className="menu-item"
                 to="home"
@@ -64,11 +56,17 @@ const Navbar = () => {
                 Education
               </Link>
             </li>
-            {/* <li>
-              <a className="menu-item" href="true">
+            <li>
+              <Link
+                className="menu-item"
+                to="projects"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Projects
-              </a>
-            </li> */}
+              </Link>
+            </li>
             <li>
               {/* <a className="menu-item" href="true">
                 Contact Me
@@ -83,8 +81,11 @@ const Navbar = () => {
                 Contact Me
               </Link>
             </li>
-            <button className="contact-btn" onClick={() => {}}>
-              Hire Me
+            <button
+              className="contact-btn"
+              onClick={() => window.open("/Shabarish_N_P.pdf", "_blank")}
+            >
+              Resume
             </button>
           </ul>
 

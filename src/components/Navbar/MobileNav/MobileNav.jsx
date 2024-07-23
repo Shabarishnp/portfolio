@@ -10,15 +10,10 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
         onClick={toggleMenu}
       >
         <div className="mobile-menu-container">
-          {/* <img
-            className="logo"
-            src="https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_64dcaa15a647704c049e47c4_mern_stack_OG_Image_6aa06011b5.jpg"
-            alt="logo"
-          /> */}
           <img src={portlogo} className="logo" alt="logo" />
           <ul>
             <li>
-              <a className="menu-item" href="true">
+              <a className="menu-item" href="#Home">
                 Home
               </a>
             </li>
@@ -32,18 +27,21 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
                 Education
               </a>
             </li>
-            {/* <li>
+            <li>
               <a className="menu-item" href="true">
                 Projects
               </a>
-            </li> */}
+            </li>
             <li>
               <a className="menu-item" href="true">
                 Contact Me
               </a>
             </li>
-            <button className="contact-btn" onClick={() => {}}>
-              Hire Me
+            <button
+              className="contact-btn"
+              onClick={() => window.open("/Shabarish_N_P.pdf", "_blank")}
+            >
+              Resume
             </button>
           </ul>
         </div>

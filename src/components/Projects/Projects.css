@@ -1,0 +1,157 @@
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-title h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+.section-title h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project.reverse {
+  flex-direction: row-reverse;
+  /* margin-right: 2rem; */
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.project-image-three img {
+  width: 600px;
+  height: 298px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 255, 218, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.project-image:hover .overlay {
+  background: transparent;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-category {
+  font-size: 0.875rem;
+  color: #64ffda;
+  letter-spacing: 0.05em;
+}
+
+.project-title {
+  font-size: 1.75rem;
+  color: #ccd6f6;
+  font-weight: bold;
+}
+
+.project-description {
+  background: #112240;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #8892b0;
+}
+
+.project-description .highlight {
+  color: #64ffda;
+}
+
+.project-tech {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #8892b0;
+  list-style: none;
+}
+.project-tech-one {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #8892b0;
+  list-style: none;
+}
+.project-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.project-links a {
+  color: #8892b0;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #64ffda;
+}
+@media (max-width: 425px) {
+  .project-image-three img {
+    width: 100%;
+    height: auto;
+  }
+  .project-tech-one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-title h1 {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 375px) {
+  .project-tech {
+    margin-left: -2rem;
+  }
+  .section-title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 320px) {
+  .project-tech {
+    margin-left: -3rem;
+  }
+}
