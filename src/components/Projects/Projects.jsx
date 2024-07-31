@@ -40,7 +40,11 @@ const Projects = () => {
               <li>Django</li>
               <li>MongoDB</li>
               <div className="project-links">
-                <a href="#true" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Shabarishnp/New_gram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TbBrandGithub />
                 </a>
               </div>
